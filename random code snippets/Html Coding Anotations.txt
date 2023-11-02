@@ -1,0 +1,324 @@
+<!--Foda-se aqui o Visual Studio dá te logo papinha-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <!--no header ficam alguma das partes importantes da estrutura,Os elementos contém os meta-dados da página;
+    • O conteúdo não é apresentado ao utilizador; • Pode conter links para ficheiros, CSS,JavaScript a familia de font e o titulo da página-->
+    <meta charset="utf-8">
+
+    <!--We join in with a description for search motors ( SEO )-->
+    <meta name="description" content="Estrutura HTML">
+
+    <!--Keywords for Scrappers and Catalog Bots-->
+    <meta name="keywords" content="HTML,LEARNING,STRUCTURE">
+
+    <meta name="author" content="Gui">
+    <!--Titulo da página-->
+    <title>LEARNING HTML</title>
+        <!--Aqui vai um exemplo de style de piscar usando um CSS within a marquee-->
+<style>
+    .blinking-text {
+        animation: blinker 1.5s linear infinite;
+        color: red;
+        font-family: sans-serif;
+    }
+
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
+</style>
+</head>
+
+<!--Os elementos de HTML-->
+<!--Aqui começa o body,É onde consta o texto, imagens, vídeo, etc. que é desejável que a página apresente ao utilizador.-->
+
+<body>
+    <!--Tipos de Elementos existentes no body-->
+    <!--Primeiro o Header, São usados para definir os cabeçalhos das páginas;
+    • Varia de <h1> a <h6>;
+    • <h1> define o header com mais relevo e o <h6> o header com menos relevo;
+    • O atributo align alinha o texto e pode tomar os seguintes valores: left; right;center; justify-->
+
+<marquee direction="right"
+    <h1 align="center">_________________LEARNING HTML_________________________________________________________________ </h1>
+</marquee>
+    <h2 align="left">Second HEADER</h2>
+    <h4 align="right">Third small header</h4>
+
+    <!--Depois temos o Paragrafo• Cria um parágrafo isolado do restante texto;
+    • O atributo align alinha o texto e pode tomar os seguintes valores: left; right;center; justify;-->
+    <p> A Floating paragraph!</p>
+                    <marquee>
+           IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+        </marquee>
+        <p align="center">
+        <marquee direction="up" scrollamount="1">
+           IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+        </marquee>
+        </p>
+        <marquee direction="right">
+           IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+        </marquee
+        
+        <marquee diretion="down" widht="25" height="20" behavior="alternate"
+                 style="border:solid">
+        </marquee
+        
+    <p> pois pois </p>
+
+
+    <!--• Os hyperlinks são a base da web;• Permitem ligações entre páginas;• Permitem criar ligações a todo o tipo de conteúdo: imagens, vídeos,
+        ela vem com os seguintes atributosAtributos:-->
+    <!--href - endereço web ou URL (para onde se vai quando se clica)title - tooltip que aparece quando se passa o rato em cima;
+    • target - indica como o link deve ser aberto no browser (e.g. novajanela, mesma janela-->
+    <a href="www.google.pt" title="Google" target="_blank">Pesquisa no Google</a>
+
+
+    <!--Tambem pode aceder a uma pasta-->
+    <p>Consulta a minha <a href="/images/textdoc.pdf.jpg">lista de projectos</a>em pdf.</p>
+
+    <!-- Elementos como as ordered lists (ol) apresentam dados com os itens numerados numericamente
+        por ordem crescente-->
+    <ol>
+        <li>Abacate</li>
+        <li>Gemas</li>
+        <li>Leite</li>
+    </ol>
+
+    <!-- As unorder lists (ul) apresentam dados com os itens não numerados -->
+    <ul>
+        <li>Primeiro</li>
+        <li>Segundo</li>
+        <li>Terceiro</li>
+
+        <!-- e também podemos misturar os dois tipos-->
+        <ol>
+            <li>Queijo</li>
+            <li>Leite</li>
+            <li>
+                Vegetais
+                <ul>
+                    <li>Alface</li>
+                    <li>Cenouras</li>
+                    <li>Batatas</li>
+                </ul>
+            </li>
+        </ol>
+    </ul>
+
+    <!-- A <label>é normalmente utilizada para identificar visualmente um campo num formulário;
+    • O <input> é utilizado para recolher dados do utilizador. Este elemento não tem obrigatoriamente de ser fechado com </input>;
+    • Atributos:
+    • for – atributo do label, que serve para identificar o elemento input
+    correspondente;
+    • type – atributo do input, que serve para indicar o tipo de valor que
+    pode ser inserido pelo utilizador (e.g. text, email, password, url, radio, date). -->
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="user_name">
+
+    <!-- Elemento conteúdo A <textarea> define uma área de texto multilinha;
+    • Atributos:
+    • cols – número de colunas (largura);
+    • rows – número de linhas (altura);-->
+
+    <textarea cols="50" rows="10"></textarea>
+
+    <!--Elemento
+    • O elemento <button> é tipicamente utilizado para submeter um <form>
+    (este elemento será analisado mais à frente).-->
+
+    <div class="button">
+        <button type="submit">Enviar</button>
+
+        <!--<select>…</select>
+    • O elemento permite que o utilizador selecione uma ou várias opções a
+    partir de uma lista de opções pré-definidas;
+    • Atributos:
+    • multiple – indica que o utilizador pode selecionar várias opções e não
+    apenas uma (tipo listbox)-->
+        <select id="Paises" name=" paises">
+            <option>Espanha</option>
+            <option>Porutugal</option>
+            <option>Angola</option>s
+            <option>Porutugal</option>
+        </select>
+
+        <!--<input type=“checkbox”…
+    • O elemento permite que o utilizador selecione zero ou várias opções a
+    partir de uma lista de opções pré-definidas;
+    • Atributos:
+    • checked – define o estado inicial da checkbox -->
+
+        <input type="checkbox" checked id="Portugal" name="Portugal" value="Portugal" />Portugal<br>
+        <input type="checkbox" checked id="Espanha" name="Espanha" value="Espanha" />Portugal<br>
+
+        <!--<input type=“radio”…
+    • Permite que o utilizador selecione uma opção a partir de uma lista de
+    opções pré-definidas
+    • Atributos:
+    • checked – define o estado inicial do radio button;
+    • name – utilizado para definir as opções que pertencem ao mesmo grupo
+            (apenas uma poderá estar checked no mesmo instante);-->
+
+        <input type="radio" id="PT" name="pais" checked>Portuga</input>
+        <input type="radio" id="ES" name="pais" checked />Espanha</input>
+        <input type="radio" id="ES" name="pais" checked />França</input>
+
+        <!--<table>…</table>
+    • Insere uma tabela na página, na posição onde a tag é inserida;
+    • Permitem organizar dados de forma tabular, em linhas e colunas;
+    • Os dados podem ser texto/números, imagens, links, ou até mesmo outras
+    tabelas;
+    • Sub-elementos:
+    • <tr>…</tr> - define uma linha na tabela (Table Row).
+    • <td>…</td> - define uma célula na linha (Table Cell).
+    • <th>…</th> - define uma célula especial normalmente utilizada no
+    header da tabela (Table Header) (substituem o sub-elemento
+    <td>…</td>).-->
+        <table border="1"align="center">
+        <tr>
+        <td>Linha 1 / Coluna 1</td>
+        <td>Linha 1 / Coluna 2</td>
+        </tr>
+        <tr>
+            <td>Linha 2 /Coluna 1</td>
+            <td>Linha 2 /Colina 2</td>
+        </tr>
+        <table border="3"align="center">
+        <tr>
+        <td>Linha 1 / Coluna 1</td>
+        <td>Linha 1 / Coluna 2</td>
+        </tr>
+        <tr>
+            <td>Linha 2 /Coluna 1</td>
+            <td>Linha 2 /Colina 2</td>
+        </tr>
+        </table>
+        
+        <!--Exemplo prático-->
+       <h3>Tabela de Salários</h3>
+        <table border="3" style="background-color:#ff0000" align="center" cellpadding="10" cellspacing="10">
+            <tr style="background-color:#ff6a00">
+                <th>Nome</th>
+                <th>Salários</th>
+            </tr>
+            <tr>
+                <td>José Silva</td>
+                <td> 1500</td>
+            </tr>
+            <tr>
+                <td> Maria Fialho</td>
+                <td>200</td>
+            </tr>
+        </table>
+                <marquee>
+            Este texto vai "olar" da direita para aesquerda
+        </marquee>
+        
+        <marquee direction="up">
+            Este texto vai "olar" da direita para a direita
+        </marquee>
+        <marquee direction="right">
+            Este texto vai "olar" da direita para a up
+        </marquee>
+        
+        <marquee diretion="down" widht="25" height="20" behavior="alternate"
+                 style="border:solid">
+        </marquee>
+        
+        <audio controls>
+            <source src="w" type="URL" />
+            <p>
+                Your Browser doenst supor HTML5 Audio.Here is a 
+                <a href="audio/back_seat.mp3">link to the audio</a>instead.
+            </p>
+        </audio>
+        
+        <svg width="100" height="100" style="background-color:red">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-midth="4" fill="yellow"></circle>
+</svg>
+            <svg width="100" height="100" style="background-color:red"aling="Left">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-midth="4" fill="yellow"></circle>
+        </svg>
+               
+                <svg height="130" width="500">
+            <ellipse cx="100" cy="70" rx="85" ry="55"></ellipse>
+            <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">
+                SVG
+            </text>
+                <svg height="130" width="500">
+            <ellipse cx="100" cy="70" rx="85" ry="55"></ellipse>
+            <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">
+                SVG
+            </text>
+        </svg>
+            <canvas id="myCanvas">
+                Your browser does not support the canvas tag.
+            </canvas>
+            <script>
+                var canvas = document.getElementById("myCanvas");
+                var ctx = canvas.getContext("2d");
+                ctx.fillStyle = "#FF0000";
+                ctx.fillRect(0, 0, 80, 80);
+            </script>
+
+<p class="blinking-text">BLINK BLINKe</p>
+
+    </div>
+  <table class="width-counters" lang="en-us" border="1"
+    <tr>
+        <th>Cliente</th>
+        <th>Interações</th>
+        <th>Estado</th>
+    </tr>
+    <tr>
+        <td>Manuel Joaquim</td>
+        <td> 5</td>
+        <td>Regular</td>
+    </tr>
+    <tr>
+        <td> Joana Fernandes</td>
+        <td> 7</td>
+        <td>Irregular</td>
+       <tr>
+           <td>Fernando Sousa</td>
+           <td> 7</td>
+            <td>Regular</td>
+       </tr>
+    </table>
+</body>
+</html>
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden; /* Ensure the container clips the animated image */
+}
+
+.TextMain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+@keyframes scrollBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
+
+.container {
+    animation: scrollBackground 10s linear infinite; /* Adjust the animation duration as needed */
+}

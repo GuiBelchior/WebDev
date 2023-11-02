@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Pagina de testes</title>
+    <script type="text/javascript" src="Script1.js"></script>
+</head>
+<body>
+    <h1> testes</h1>
+    <p onclick="f('OLAAA')">Clica-me</p>
+
+    <hr />
+    <p id="studentName"> Mostra-me o student </p>
+    <a href="#" onclick="showStudent();">MOSTRAA ALUNOS</a>
+    <hr />
+    <p id="students"> Mostra-me todos os student </p>
+    <a href="#" onclick="showStudents()" ;>MOSTRAA todos ALUNOS</a>
+
+    <p id="studentsUl"> Mostra-me todos os student em UL </p>
+    <a href="#" onclick="showStudentsUl()" ;>MOSTRAA todos ALUNOS em Ul</a>
+
+    <br />
+    <hr />
+    <ul id="ullist" style="display:none">
+        <script type="text/javascript">
+
+            for (var i = 0; i < students.length; i++) {
+                document.write(`<li>${students[i]}</li>`)
+            }
+        </script>
+    </ul>
+
+    <a href="#" onclick="showStudentsUl2();">MOSTRAA todos ALUNOS em Ul(UL 2)</a>
+
+    <br />
+
+    <input id="nome" type="text" />
+    <a href="#" onclick="addStudent()">Adiciona um aluno</a>
+
+    <br />
+    <br />
+    <br />
+
+    <hr />
+
+    <input id="valor" type="number" />
+    <a href="#" onclick="addNumber();">Add a number </a>
+    <a href="#" onclick="removeNumber();">remove a number </a>
+    <p id="result"></p>
+    <script language="javascript" type="text/javascript">
+
+        //variaveis
+        numeros = [];
+        //Funcao addNumbers
+        function addNumber() {
+            var numero = document.getElementById("valor").value;
+            numeros.unshift(numero);
+            document.getElementById("result").innerHTML = numeros;
+        }
+        //Funcao RemoveNumber
+        function removeNumber() {
+            var numero = document.getElementById("valor").value;
+            var index = numeros.indexOf(numero);
+
+            if (index < 0) {
+                alert('Número não encontrado');
+                return;
+            }
+
+            numeros.splice(index, 1);
+            document.getElementById("result").innerHTML = numeros;
+        }
+    </script>
+
+    <hr />
+
+    <h2>JavaScript Objects</h2>
+
+    <p id="demo">  </p>
+
+    <script>
+
+        //Criar um objecto:
+        const car = { type: "FIAT", model: "500", color: "white" };
+
+        //mostrar dados do objecto:
+        document.getElementById("demo").innerHTML = "Marca:" + car.type + "<br>";
+        document.getElementById("demo").innerHTML += "Modelo" + car.model + "<br>";
+        document.getElementById("demo").innerHTML += "Cor" + car.color; + "<br>";
+    </script>
+
+
+    <p id="studentName">Click "MOSTRA ALUNOS" to display student information.</p>
+    <a href="#" onclick="showStudent();">MOSTRA ALUNOS</a>
+
+</body>
+</html>
+
+<p id="empresaName">Click "MOSTRA EMPRESA" to display empresa information.</p>
+<a href="#" onclick="showEmpresa(0);">MOSTRA EMPRESA</a>

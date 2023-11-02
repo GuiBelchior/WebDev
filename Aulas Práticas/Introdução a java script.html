@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+</head>
+
+<body>
+    <h1> Testes de JavaScript</h1>
+    <script type="text/javascript">
+
+        var a = 0;
+        var linebreak = "<br/>";
+        a = ++a;
+        document.write("++a=");
+        result = ++a;
+        document.write(result);
+        document.write(linebreak);
+
+        var a = 10;
+        var b = 20;
+        var linebreak = "<br/>";
+
+        document.write("(a == b) => ");
+        result = a == b;
+        document.write(result);
+        document.write(linebreak);
+
+        var a = 10;
+        var b = "String";
+        var linebreak = "<br/>";
+
+        result = (typeof b == "string" ? "B is String" : "B is numeric");
+        document.write("Result =>");
+        document.write(result);
+        document.write(linebreak);
+
+        var grade = "A";
+
+        switch (grade) {
+            case "A":
+                document.write("Excelente<br/>");
+                break;
+            case "B":
+                document.write("Muito bom <br/>");
+                break;
+            default:
+                document.write("Nota inválida <br/>");
+        }
+
+
+
+        var nome = 'Manel';
+
+        function teste1(msg) {
+            console.log(msg);
+            alert('MSG:' + msg);
+        }
+
+        function teste2(a, b) {
+            //variables
+            var c;
+            //operations
+            c = a + b;
+            //result
+            console.log(c);
+        }
+
+        function test3() {
+            if (nome == "Manel") {
+                nome = "Maria"
+            }
+            else {
+                nome = "Manel";
+            }
+            console.log(nome)
+        }
+
+        function test4(n) {
+            for (var i = 0; i < n; i++) {
+                console.log(i);
+
+            }
+        }
+
+        var var1 = 6;
+
+        if (typeof var1 == "string") {
+            console.log("var1 is a string");
+        } else if (typeof var1 == "number") {
+            console.log("var1 is a number")
+        } else {
+            console.log("var1 is not a number neither a string");
+        }
+
+        function teste5() {
+            for (var property in navigator) {
+                console.log(property);
+            }
+        }
+
+
+        function changeH1(newtext) {
+            var element;
+            element = document.getElementById("titulo");
+            for (var i = 0; i < 1000; i++) {
+                element.innerHTML = i;
+            };
+        }
+
+        function mudaCor1() {
+            const collection = document.getElementsByClassName("example");
+            for (let i = 0; i < collection.length; i++) {
+                collection[i].style.backgroundColor = "red";
+            }
+        }
+        function mudaCor2() {
+            document.getElementsByTagName("p")[1].style.color = "blue";
+        }
+        function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            alert("submitted");
+            return false;
+        }
+    </script>
+    <form name="myForm"
+          onsubmit="return validateForm()" method="post">
+        <input type="text" name="fname" placeholder="Name" />
+        <input type="submit" value="Submit" />
+          </form>
+
+
+    <p class="example">
+        teste 1
+    </p>
+    <p class="test">
+        teste 2
+    </p>
+    <p class="example">
+        teste 3
+    </p>
+
+    <p onclick="mudaCor1();" style="cursor: pointer;">clique aqui 1</p>
+    <p onclick="mudaCor2();" style="cursor: pointer;">clique aqui 2</p>
+    <p>
+        Hwehwhiaodfianodnanofnoanfoinaonfaoanofnfoanfoinaonfan
+        <a href="javascript:teste1('Weipaaaaaaa');">OPEN HERE</a>
+    </p>
+
+    <p>
+        ajsjakjja
+        <button onclick="javascript: teste2('FOI','Nao');"> Clique aqui para executar o teste 2</button>
+    </p>
+
+    <p onmouseover="javascript: test3();">
+        passa o rato por aqui
+    </p>
+    <p>
+        <button ondblclick="javascript:test4(5);">Clique aqui para contar até N</button>
+    </p>
+    <button onclick="javascript: teste5();">Ver todas as proriedadews do browwser</button>
+    <button onclick="javascript:alert(navigator['getbatery']);">Ver a propriedade</button>
+    <button onclick="javascript:teste7();">Ver o valor de A </button>
+    <h1 id="titulo">(SEM TITULO)</h1>
+
+    <span onclick="changeH1('novotituloinserido');" style="cursor:pointer;">Clique Aqui</span>
+
+</body>
+</html>

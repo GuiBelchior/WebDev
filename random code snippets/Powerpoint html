@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>A começar com html</title>
+        <meta name="description" content="Uma página web com todos os elementos abordados no PP">
+        <link rel="stylesheet" href="main.css">
+        
+        <!DOCTYPE html>
+
+    <style>
+      /* CSS code to make the table borders black */
+      table {
+        border-collapse: collapse;
+        border: 1px solid black;
+      }
+
+      td {
+        padding: 8px;
+      }
+    </style>
+
+    <header>
+    <h1>Conjunto de elementos para HTML</h1>
+    </header>
+    <body>
+        <main>
+        <article>
+        <h2>1_Aqui vai uma descrição de todos os elementos de HTML</h2>
+        <h2><strong>PARAGRAFRO</strong> como <strong>P</strong></h2>
+        <p>O Paragrafo<br>
+            • Cria um parágrafo isolado do restante texto <br>
+            • O atributo align alinha o texto e pode tomar os seguintes valores: left; right;center; justify;
+        </p>
+        <hr>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRt5KVlBj_dQAr2fSJhzcfFcPTTjDp2T0rWc1l3vpHwigg1MuSjw4-g-hr8P4iKamnxI0&usqp=CAU">
+
+        <h3> Exemplo</h3>
+        <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML. HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em 
+        </p>
+        
+</article>
+        <h2><strong>o Head </strong> como <strong>H</strong></h2>
+        <p>O Header<br>
+           Primeiro o Header, São usados para definir os cabeçalhos das páginas;
+    • Varia de h1 a h6;<br>• h1 define o header com mais relevo e o h6 o header com menos relevo;<br>• O atributo align alinha o texto e pode tomar os seguintes valores: left; right;center; justify
+            
+        </p>
+<hr>
+<p><strong>Exemplo</strong></p>
+<h3 align="center">This is heading 3</h3>
+<h4 align="center">This is heading 4</h4>
+<h5 align="center">This is heading 5</h5>
+<h6 align="center">This is heading 6</h6>
+        
+        <p><strong>Exemplo de código</strong></p>
+        
+        <img src="https://th.bing.com/th/id/R.30de4ed3b1ac7251d11dbc04b633a269?rik=wz8Hz02h2QwViA&pid=ImgRaw&r=0">
+<br>
+<h2>Outros elementos de formatação</h2>
+        <br>
+<table border="10" align="center" width=800>
+  <tr>
+    <td width=200>"B" ou "strong"</td>
+    <td>Apresenta texto a negrito(bold)</td>  
+  </tr>
+  <tr>
+    <td width=200>"i" ou "em" </td>
+    <td>Apresenta texto a itálico</td>
+  </tr>
+      <tr>
+    <td>"small"</td>
+    <td>Texto mais pequeno</td>  
+  </tr>
+      <tr>
+    <td>"Del"</td>
+    <td>Texto rasurado</td>  
+  </tr>
+
+      <tr>
+    <td>"ins"</td>
+    <td>Sublinha o texto</td>  
+  </tr>
+      <tr>
+    <td>"SUB"</td>
+    <td>Texto aparece um pouco abaixo do resto do texto</td>  
+  </tr>  <tr>
+    <td>"Sup"</td>
+    <td>Texto aparece um pouco acima do resto do texto</td>  
+  </tr>
+    
+</table>
+<br>
+       
+        <h2><marquee>HYPERLINKS como A</marquee></h2>
+        <p>
+            • Os hyperlinks são a base da web;
+• Permitem ligações entre páginas;<br>
+• Permitem criar ligações a todo o tipo de conteúdo: imagens, vídeos,
+documentos, etc.<br>
+Atributos:<br>
+• href - endereço web ou URL (para onde se vai quando se clica);<br>
+• title - tooltip que aparece quando se passa o rato em cima;<br>
+• target - indica como o link deve ser aberto no browser (e.g. nova
+janela, mesma janela).
+        </p>
+        <hr>
+        <p><strong>Exemplo de código</strong></p>
+        <img src="https://th.bing.com/th/id/OIP.i5gaq9WBnsCabPrqPkOGWgHaCr?pid=ImgDet&rs=1">
+        <p>
+            • O href pode conter caminhos absolutos ou caminhos relativos;<br>
+• Para aceder a uma subpasta, utiliza-se o caminho relativo ./pasta/recurso
+(e.g. href=“./imagens/fotos/foto1.png”);<br>
+• Se o ficheiro estiver na própria pasta, basta indicar o nome do ficheiro (e.g.
+href=“imagem1.png”);<br>
+• Se estiver numa diretoria irmã, pode deslocar-se um nível para trás através
+do ../ (e.g. ../imagens/fotografias/foto3.png”).
+        </p>
+        <h2><em><marquee>Ordered list(ol) e unordered list</marquee></em></h2>
+        <p>
+As ordered lists (ol) apresentam dados com os itens numerados
+numericamente por ordem crescente:
+        </p>
+        
+        <hr>
+        <p><strong>Exemplo de código</strong></p>
+        <img src="https://gocoding.org/wp-content/uploads/2020/06/Ordered-List-Example.png">
+        
+        <p><strong>Exemplo de código</strong></p>
+        <ol >
+        <li>Abacate</li>
+        <li>Gemas</li>
+        <li>Leite</li> 
+        </ol>
+        <br>
+                <p>
+As <strong><em>unordered lists</em></strong> apresentam dados com os itens não numerados:
+        </p>
+        <ul>
+        <li>Primeiro</li>
+        <li>Segundo</li>
+        <li>Terceiro</li>
+
+        <hr>
+        <p><strong>Exemplo de código</strong></p>
+        <img src="https://gocoding.org/wp-content/uploads/2020/06/Ordered-List-Example.png">
+        
+        
+        
+        <h3>Tambem podemos usar os dois tipos em conjunto</h3>
+            <hr>
+                   <ol>
+            <li>Queijo</li>
+            <li>Leite</li>
+            <li>
+                Vegetais
+                <ul>
+                    <li>Alface</li>
+                    <li>Cenouras</li>
+                    <li>Batatas</li>
+                </ul>
+            </li>
+        </ol>
+    </ul>
+        <h2><marquee><em>Label e Input</em></marquee></h2>
+                <p>
+A label é normalmente utilizada para identificar visualmente um campo
+num formulário;<br>
+• O input é utilizado para recolher dados do utilizador. Este elemento não
+tem obrigatoriamente de ser fechado com /input;<br>
+• Atributos:<br>
+• for – atributo do label, que serve para identificar o elemento input
+correspondente;<br>
+• type – atributo do input, que serve para indicar o tipo de valor que
+pode ser inserido pelo utilizador (e.g. text, email, password, url, radio,
+date).<br>
+                    <hr>
+<p><strong>Exemplo</strong></p>
+        <label for="Nome">Nome:</label>
+        <input type="text" id="nome" name="user_name">
+        <br>
+        
+<h3>TextArea - area de escrita</h3>
+        <p>• A textarea define uma área de texto multilinha;<br>
+• Atributos:<br>
+• cols – número de colunas (largura);<br>
+• rows – número de linhas (altura);
+</p>
+        
+        <textarea cols="100" rows="10"></textarea>
+
+        <br>
+        <p><strong>Exemplo de código</strong></p>
+        <img src="https://gocoding.org/wp-content/uploads/2020/06/Ordered-List-Example.png">
+    
+        <h2><marquee><em>Button</em></marquee></h2>
+                <p>
+• O elemento button é tipicamente utilizado para submeter um form
+(este elemento será analisado mais à frente).
+        </p>
+        <hr>
+        <p><strong>Exemplo</strong></p>
+        <div aling="center" class="button">
+        <button type="submit"> Enviar </button>
+        </div>
+        <br>
+        <p> Ou utlizando em conjunto com CSS? </p>
+        <button class="button">Enviar!</button>
+        
+<p><strong>Exemplo de código</strong></p>
+        <img src="https://gocoding.org/wp-content/uploads/2020/06/Ordered-List-Example.png">
+        
+        <h3>Elemento <em>Select</em></h3>
+        
+        <p>• • O elemento permite que o utilizador selecione uma ou várias opções a
+partir de uma lista de opções pré-definidas;<br>
+• Atributos:<br>
+• multiple – indica que o utilizador pode selecionar várias opções e não
+apenas uma (tipo listbox);
+</p>
+<hr>
+        <p><strong>Exemplo</strong></p>
+        <p align="center">
+        <select  id="paises" name="paises">
+        <option>VAI</option>
+            <option>SIGA</option>
+            <option>BORA</option>
+            <option>UPA</option>
+            <option>Espanha</option>
+        </select>
+        </p>
+                <p align="center">
+        <select multiple id="paises" name="paises">
+        <option>VAI</option>
+            <option>SIGA</option>
+            <option>BORA</option>
+            <option>UPA</option>
+            <option>Espanha</option>
+        </select>
+        </p>
+        <p><strong>Exemplo de código</strong></p>
+        <img src="https://th.bing.com/th/id/OIP.s_aTmdW0kM5k_AzW3wqcSgAAAA?pid=ImgDet&rs=1">
+  
+<hr>
+               <h3>Elemento <em>input type=checkbox...</em></h3>
+        
+        <p>• O elemento permite que o utilizador selecione zero ou várias opções a
+partir de uma lista de opções pré-definidas;<br>
+• Atributos:<br>
+• checked – define o estado inicial da checkbox;<br>
+</p>
+<hr>
+        <p><strong>Exemplo</strong></p>
+        <p>
+         <input type="checkbox" checked id="Portugal" name="Portugal" value="Portugal" />Portugal<br>
+        <input type="checkbox" checked id="Espanha" name="Espanha" value="Espanha" />Espanha<br>
+            <p><strong>Exemplo de código</strong></p>
+        <img src="https://www.wikihow.com/images/thumb/6/60/Create-a-Check-Box-with-HTML-Step-3.jpg/v4-460px-Create-a-Check-Box-with-HTML-Step-3.jpg.webp">
+        <p><strong>OU</strong></p>
+        
+        <h3>Elemento <em>input type="radio"...</em></h3>
+           <p>• Permite que o utilizador selecione uma opção a partir de uma lista de
+opções pré-definidas<br>
+• Atributos:<br>
+• checked – define o estado inicial do radio button;<br>
+• name – utilizado para definir as opções que pertencem ao mesmo
+grupo (apenas uma poderá estar checked no mesmo instante);
+</p>
+    <p><strong>Exemplo</strong></p>
+        <input type="radio" id="PT" name="pais" checked>Primeiro</input>
+        <input type="radio" id="ES"name="pais" checked>Segundo</input>
+    <input type="radio" id="PT" name="pais" checked>Third</input>
+    <input type="radio" id="PT" name="pais" checked>Portugal</input>
+<input type="radio" id="PT" name="pais" checked>Portugal</input>
+<h2><marquee><em>Elemento table </em></marquee></h2>
+           <p>• Insere uma tabela na página, na posição onde a tag é inserida;<br>
+• Permitem organizar dados de forma tabular, em linhas e colunas;<br>
+• Os dados podem ser texto/números, imagens, links, ou até mesmo outras
+tabelas;<br>
+• Sub-elementos:<br>
+• "TR"dfine uma linha na tabela (Table Row).<br>
+• "TD"- define uma célula na linha (Table Cell).<br>
+• "TH - define uma célula especial normalmente utilizada no
+header da tabela (Table Header) (substituem o sub-elemento"br"
+"td")
+</p>
+<p><strong>Exemplo</strong></p>
+        <table border="5" align="center">
+            <tr>
+                <td>Linha 1 / Coluna 1</td>
+                <td>Linha 1 / Coluna 2</td>
+            </tr>
+            <tr>
+                <td>Linha 2 /Coluna 1</td>
+                <td>Linha 2 /Colina 2</td>
+                
+            </tr>
+        </table>
+<p><strong>Exemplo pratico</strong></p>
+        <table border="3" style="background-color:#ff0000" align="center" cellpadding="10" cellspacing="10"
+               width="600px" height="150px">
+            <tr style="background-color:#ff6a00">
+                <th>Nome</th>
+                <th>Salários</th>
+            </tr>
+            <tr>
+                <td>José Silva</td>
+                <td> 1500</td></td>
+            </tr>
+            <tr>
+                <td> Maria Fialho</td>
+                <td>200</td>
+            </tr>
+        </table>
+<h2><marquee><em>Elemento IMG  </em></marquee></h2>
+           <p>• Insere uma imagem na página, na posição onde a tag é inserida;<br>
+• Atributos:<br>
+• src - define o caminho onde a imagem se encontra guardada;<br>
+• height - especifica a altura da imagem;<br>
+• width - especifica a largura da imagem;<br>
+• alt - alternativa de texto quando não é possível mostrar a imagem.<br>
+</p>
+ <img src="https://i.ytimg.com/vi/a2DRuCliClU/maxresdefault.jpg">
+
+<h2><marquee><em>ElementoMarque</em></marquee></h2>
+           <p>• Permite rodar o conteúdo numa determinada direção um hyperlink para
+outra página;<br>
+• Atributos:<br>
+• direction - indica a direção para onde se deve deslocar o elemento;<br>
+• behavior - indica o comportamento pode ser alternado.<br>
+</p>
+ <img src="https://i.ytimg.com/vi/a2DRuCliClU/maxresdefault.jpg">
+    </body>
+</html>
+<!--

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#main {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#main div {
+  width: 50px;
+  height: 50px;
+}
+
+#main div:first-child {
+  margin-left: auto;
+}
+</style>
+</head>
+<body>
+
+<h1>The flex-direction Property</h1>
+
+<div id="main">
+  <div style="background-color:coral;">A</div>
+  <div style="background-color:lightblue;">B</div>
+  <div style="background-color:khaki;">C</div>
+  <div style="background-color:pink;">D</div>
+  <div style="background-color:lightgrey;">E</div>
+  <div style="background-color:lightgreen;">F</div>
+</div>
+
+<p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the flex-direction property.</p>
+
+</body>
+</html>
+        #main {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            position: fixed;
+            background-color: white;
+            width: 100%;
+        }
+       #main div {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+  <div id="main">
+        <div>
+            <img src="https://upskill.pt/wp-content/uploads/2022/10/Logo-UPskill-3aEd.svg" />
+        </div>
+
+        <div style="background-color: lightblue;">
+            <select>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+            </select>
+        </div>
+
+        <div style="background-color: khaki;">
+            <select>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+            </select>
+        </div>
+
+        <div style="background-color: pink;">
+            <select>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+            </select>
+        </div>
+
+        <div style="background-color: lightgrey;">FAQ</div>
+    </div>
